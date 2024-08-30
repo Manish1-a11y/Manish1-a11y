@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true">
+        <com.google.android.material.card.MaterialCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"> </LinearLayout>
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/camera"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/file"
+            android:background="#FF6200EE"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose file"/>
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Enter the deatils"
+            android:singleLine="true"
+            android:paddingStart="2dp"/>
+        <EditText
+          android:id="@+id/price"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@color/white"
+          android:layout_marginTop="10dp"
+          android:hint="Enter price"
+          android:singleLine="true"
+          android:paddingStart="2dp"/>
+      <EditText
+          android:id="@+id/Address"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@color/white"
+          android:layout_marginTop="10dp"
+          android:hint="Enter the Address"
+          android:singleLine="true"
+          android:paddingStart="2dp"/>
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:background="@color/white"
+             android:layout_marginTop="10dp">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Share the location"
+                 android:textSize="15dp"
+                 android:layout_centerVertical="true"
+                 android:paddingStart="20dp"/>
+             <com.google.android.material.materialswitch.MaterialSwitch
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:layout_margin="5dp"/>
+
+         </RelativeLayout>
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/upload"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_margin="20dp"
+              android:background="@color/white"
+              android:backgroundTint="#add8e6"
+              android:text="Upload"
+              android:textColor="@color/white"
+              android:textStyle="bold"/>
+
+      </LinearLayout>
+</RelativeLayout>
